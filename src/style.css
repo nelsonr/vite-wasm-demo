@@ -266,7 +266,7 @@ body {
     font-weight: 600;
     color: var(--black);
     resize: vertical;
-    min-height: 110px;
+    min-height: 80px;
     outline: none;
     box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.15s ease;
@@ -281,6 +281,37 @@ body {
 .text-input::placeholder {
     color: #9a7a2e;
     font-weight: 400;
+}
+
+/* --- Random button --- */
+
+.random-btn {
+    display: block;
+    margin-top: 0.75rem;
+    margin-inline: auto;
+    padding: 0.5rem 1.1rem;
+    border-radius: 10px;
+    border: 2px solid var(--black);
+    background: var(--yellow-dark);
+    font-family: "Fredoka One", cursive;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--black);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+}
+
+.random-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px var(--black);
+}
+
+.random-btn:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px var(--black);
 }
 
 /* --- Arrow divider --- */
