@@ -192,8 +192,8 @@ body {
 
 .preview-copy {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
 
     button {
         appearance: none;
@@ -202,6 +202,9 @@ body {
         padding: 0.25rem;
         border-radius: 0.25rem;
         color: hsl(0 0% 0% / 40%);
+        line-height: 1;
+        width: 32px;
+        height: 32px;
 
         &:hover {
             color: hsl(0 0% 0% / 70%);
@@ -211,6 +214,11 @@ body {
         &:active {
             background-color: hsl(0 0% 0% / 10%);
         }
+    }
+
+    svg {
+        width: 16px;
+        height: 16px;
     }
 }
 
