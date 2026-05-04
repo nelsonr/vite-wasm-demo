@@ -19,6 +19,8 @@ function main() {
       navigator.clipboard.writeText(preview.textContent.trim() ?? "");
     });
   }
+
+  preview.textContent = get_mocking_text(preview.textContent ?? "");
 }
 
 init().then(main);
