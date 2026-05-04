@@ -190,6 +190,30 @@ body {
     animation: slideUp 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) 0.22s both;
 }
 
+.preview-copy {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    button {
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+        color: hsl(0 0% 0% / 40%);
+
+        &:hover {
+            color: hsl(0 0% 0% / 70%);
+            background-color: hsl(0 0% 0% / 5%);
+        }
+
+        &:active {
+            background-color: hsl(0 0% 0% / 10%);
+        }
+    }
+}
+
 @keyframes dropIn {
     from {
         transform: translateY(-36px);
