@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SpongeBob Text Generator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Comic+Neue:ital,wght@0,400;0,700;1,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="bubbles" aria-hidden="true">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+
+        <div id="app">
+            <header class="app-header">
+                <h1 class="app-title">SpongeBob<br />Text Generator</h1>
+            </header>
+
+            <main class="app-main">
+                <div class="input-card">
+                    <label class="input-label" for="text">
+                        Type your text below
+                    </label>
+                    <textarea
+                        id="text-input"
+                        class="text-input"
+                        placeholder="Enter some text here..."
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <div class="arrow-divider" aria-hidden="true">↓</div>
+
+                <div class="preview-card">
+                    <div class="preview-label">mOcKiNg SpOnGeBoB sAyS...</div>
+                    <div class="preview-text" id="preview">
+                        tYpE sOmEtHiNg AbOvE tO sEe ThE mAgIc!
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
